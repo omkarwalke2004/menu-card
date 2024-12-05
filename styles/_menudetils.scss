@@ -1,0 +1,123 @@
+
+
+.menu-details{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  &__heading{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+  }
+  &__LINK{
+    position: absolute; /* Position it relative to the parent */
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    &:hover {
+      color: #007bff; /* Change to a blue color on hover */
+      transform: translateX(-5px); /* Slide left slightly */
+    }
+    &__back-btn {
+      font-size: 1.5rem; /* Icon size */
+      margin-right: 0.5rem; /* Space between icon and text */
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: rotate(-15deg); /* Rotate slightly on hover */
+      }
+    }
+    
+    
+  }
+  
+  &__image {
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 5px solid transparent; /* Initial border style */
+    border-radius: 10px; /* Rounded corners */
+    animation: border-glow 3s infinite; /* Animation for border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.05); /* Slight zoom on hover */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+    }
+  }
+
+    &__name{
+        font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    }
+    &__description{
+        font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+
+    }
+    &__price{
+        font-size: 2rem;
+    color: #000;
+    font-weight: bold;
+    display: flex; 
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 0.5rem;
+    &::before{
+        content: '';
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-image: url("https://static.vecteezy.com/system/resources/previews/009/793/636/non_2x/india-currency-rupee-icon-symbol-illustration-free-vector.jpg");
+        background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
+    }
+    @media (max-width: 768px) {
+        padding: 1rem;
+    
+        &__name {
+          font-size: 1.8rem;
+        }
+    
+        &__description {
+          font-size: 1rem;
+        }
+    
+        &__price {
+          font-size: 1.3rem;
+        }
+      }
+    
+      @media (max-width: 480px) {
+        &__name {
+          font-size: 2rem;
+        }
+    
+        &__description {
+          font-size: 1rem;
+        }
+    
+        &__price {
+          font-size: 2rem;
+        }
+      }
+    
+
+
+}

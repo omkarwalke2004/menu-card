@@ -1,0 +1,56 @@
+.homepage {
+    padding: 20px;
+  
+    &__title {
+      font-size: 2rem;
+      text-align: center;
+      color: #333;
+      margin-bottom: 4rem; /* Reduced the margin for better spacing */
+    }
+    &__menu-button{
+        text-align: center;
+        margin-bottom: 2rem;
+        .menu-button{
+            padding: 0.8rem 2rem;
+            background-color: #6c63ff;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            &:hover {
+                background-color: #5a54e6;
+              }      
+        }
+    }
+  
+    &__menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Automatically adjusts number of columns */
+      gap: 3.5rem;
+      justify-items: center;
+      padding: 1rem;
+    }
+  
+    &__no-menu {
+      font-size: 1.2rem;
+      color: #888;
+      font-style: italic;
+  
+      p {
+        padding: 1rem 2rem;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+  }
+  
+  /* Responsive Design Improvements */
+  
+  
+  
