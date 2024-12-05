@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link';
 import { deletemenuItem } from '@/redux/menuSlice';
 
-const page = () => {
+const Page = () => {
   const menus = useSelector((state)=>state.menu.items);
   const dispatch = useDispatch();
   const handeldelete =(id)=>{
@@ -38,4 +38,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
